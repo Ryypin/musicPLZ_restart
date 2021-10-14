@@ -1,9 +1,38 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: lime;
+/*!
+***
+*Nom projet
+***
+* Projet...
+* Option DWM
+*
+* @version 1.0
+* @author: Harris Steven <harris.harris.steven@hotmail.com>
+*
+***
+*/
+
+/* ----- IMPORTER POLICE -----
+
+@font-face {
+  font-family: 'Bebas Neue', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+} */
+
+/* ----- RESOLUTION X2 -----
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+}
+ */
+
+/* ----- MEDIA QUERRY -----
+
+@media(max-width : 767px){
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+@media(min-width : 767px){
 }
+ */
+
+@use "_normalize.css";
+@use "_form.scss";
