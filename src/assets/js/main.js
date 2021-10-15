@@ -1,10 +1,10 @@
 'use strict';
 
-var spaceInput = 0;
-let inputCount = 0;
-let video = document.querySelector(".musicVideo");
-let timer;
-let logo = document.querySelector("#logo");
+const spaceInput = 0;
+const inputCount = 0;
+const video = document.querySelector(".header__video");
+const timer;
+const logo = document.querySelector("#logo");
 
 
 // <---------- SPACE BAR ANIMATION ---------->
@@ -17,7 +17,6 @@ document.body.onkeydown = function(e){
         e.preventDefault();
         spaceInput++;
         inputCount++;
-        console.log(inputCount);
     } else if(inputCount == 12){
         e.preventDefault();
         clearTimeout(timer);
@@ -70,3 +69,5 @@ function countSpace(){
         Timer();
     }
 } 
+
+// <---------- STOP VIDEO ON SCROLL ---------->
