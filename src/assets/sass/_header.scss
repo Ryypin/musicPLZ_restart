@@ -29,3 +29,17 @@
     z-index: 10;
     height: 400px;
 }
+.header__filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(242,19,19,1) 41%, rgba(242,93,7,1) 100%); 
+    opacity: 0.6;
+    visibility: hidden;
+}
+.header__filter--show{
+    visibility: visible;
+}

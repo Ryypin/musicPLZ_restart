@@ -1,10 +1,10 @@
 'use strict';
 
-const spaceInput = 0;
-const inputCount = 0;
-const video = document.querySelector(".header__video");
-const timer;
-const logo = document.querySelector("#logo");
+let spaceInput = 0;
+let inputCount = 0;
+let timer;
+let video = document.querySelector(".header__video");
+let logo = document.querySelector("#logo");
 
 
 // <---------- SPACE BAR ANIMATION ---------->
@@ -60,14 +60,11 @@ function animation(){
       });
 }
 
-function countSpace(){
-    if (inputCount == 12){
-        clearTimeout(timer);
-        video.play();
-        logo.style.transform = `opacity(0)`;
-    } else {
-        Timer();
-    }
-} 
+// <---------- BURGER MENU ---------->
 
-// <---------- STOP VIDEO ON SCROLL ---------->
+let buttonBurger = document.querySelector(".nav__burger");
+let change = document.querySelector(".header");
+
+buttonBurger.addEventListener("click", () =>{
+    change.classList.toggle("change");
+})

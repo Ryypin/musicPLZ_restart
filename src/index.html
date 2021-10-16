@@ -11,7 +11,10 @@
 		<link href="assets/css/main.css" rel="stylesheet">
 	
 		<!-- Link type -->
-	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+		
 		<!-- Twitter Card data -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@publisher_handle">
@@ -36,6 +39,22 @@
 	</head>
 <body class="body__grid">
 	<header class="header">
+		<nav class="nav">
+			<div class="nav__bar">
+				<div class="nav__burger">
+					<button class="nav__button"><span class="nav__button--span">Burger menu</span></button>
+				</div>
+			</div>
+			<div class="nav__block">
+				<ul class="nav__list">
+					<li class="nav__el">Home</li>
+					<li class="nav__el">Music</li>
+					<li class="nav__el">Label</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="header__body">
 		<div class="header__logo">
 			<img id="logo" class="logo" src="assets/images/header_logoWHITE.svg">
 		</div>
@@ -44,9 +63,12 @@
 				<source src="assets/images/queenShort.mp4" type="video/mp4">
 			</video>
 		</div>
-	</header>
+		<div class="header__filter">
+			<p>Gradiant Filter</p>
+		</div>
+	</div>
 	<main class="main">
-
+		
 	</main>
 </body>
 </html>
