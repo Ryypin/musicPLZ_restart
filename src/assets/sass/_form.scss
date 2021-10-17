@@ -1,5 +1,10 @@
 @use "_var.scss" as v;
 
+.body__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 .header{
     position: fixed;
     width: 100%;
@@ -8,18 +13,101 @@
     left: 0;
     z-index: 100;
 }
-.header__body{
-    position: fixed;
+.main{
+    grid-template-columns: 1/-1;
+    grid-row: 1;
     width: 100vw;
     height: 100vh;
     background-color: #0D0D0D;
 }
-.main{
+.main__music{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__video{
+    filter: opacity(0.7);
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+.main__logo{
     position: relative;
-    top: 100vh;
-    height: 1000px;
-    opacity: 0.1;
-    background-color: #0D0D0D;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    z-index: 10;
+    height: 350px;
+}
+.main__text{
+    position: absolute;
+    top: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    margin: 0 25px 0 25px;
+}
+.main__text--show{
+    text-transform: uppercase;
+}
+.hidden{
+    visibility: hidden;
+    pointer-events: none;
+}
+.section{
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr 1fr 25px;
+    grid-template-rows: auto;
+}
+.section__title{
+    margin-top: 50px;
+    grid-column: 2/5;
+    grid-row: 1;
+}
+.section__img{
+    grid-column: 2/5;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    height: 300px;
+    width: auto;
+}
+.section__slider{
+    margin-top: 25px;
+    grid-column: 2/5;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__button{
+    padding: 0;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+.section__button--prev{
+    transform: rotate(135deg);
 }
 
 

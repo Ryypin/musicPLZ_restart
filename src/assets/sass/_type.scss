@@ -1,7 +1,42 @@
+$fontRapport: 1.414;
+$fontSize1: 18px;
+$fontSize2: $fontSize1*$fontRapport;
+$fontSize3: $fontSize2*$fontRapport;
+$fontSize4: $fontSize3*$fontRapport;
+$fontSize5: $fontSize4*$fontRapport;
+
 @font-face {
     font-family: 'Josefin Sans', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
   }
+@font-face {
+  font-family: 'Federo', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+}
 html{
     font-family: 'Josefin Sans', cursive;
+    font-size: $fontSize1;
+}
+.section__text{
+  text-transform: uppercase;
+  text-align: center;
+}
+.section__text--date{
+  font-size: 14px;
+}
+.title__big{
+  color: white;
+  font-family: 'Federo';
+  font-size: $fontSize3;
+}
+.title__big--black{
+  text-transform: uppercase;
+  color: black;
+}
+.main__text{
+  font-family: 'Federo', cursive;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: $fontSize2;
+  color: white;
 }

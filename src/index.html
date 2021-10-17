@@ -14,6 +14,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet"> 
 		
 		<!-- Twitter Card data -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -34,7 +37,9 @@
 		<meta property="og:image" content="http://steven-harris.be/projets/nourriture/assets/images/nourriture.jpg" />
 		<meta property="og:image:width" content="600">
 		<meta property="og:image:height" content="500">
-	
+		
+		<!-- Script Link -->
+		<script src="assets/js/hammer.js"></script>
 		<script defer src="assets/js/main.min.js"></script>
 	</head>
 <body class="body__grid">
@@ -42,7 +47,7 @@
 		<nav class="nav">
 			<div class="nav__bar">
 				<div class="nav__burger">
-					<button class="nav__button"><span class="nav__button--span">Burger menu</span></button>
+					<button class="nav__button"><span class="button--span">Burger menu</span></button>
 				</div>
 			</div>
 			<div class="nav__block">
@@ -54,21 +59,31 @@
 			</div>
 		</nav>
 	</header>
-	<div class="header__body">
-		<div class="header__logo">
-			<img id="logo" class="logo" src="assets/images/header_logoWHITE.svg">
+	<main class="main">
+		<div class="main__logo">
+			<img id="logo" class="logo" src="assets/images/header_logoWHITE.svg" alt="Logo du groupe queen.">
+			<p class="main__text">Touch screen three times</p>
+			<p class="main__text main__text--show hidden">Show must go on</p>
 		</div>
-		<div class="header__music">
-			<video class="header__video">
+		<div class="main__music">
+			<video class="main__video">
 				<source src="assets/images/queenShort.mp4" type="video/mp4">
 			</video>
 		</div>
-		<div class="header__filter">
-			<p>Gradiant Filter</p>
-		</div>
-	</div>
-	<main class="main">
-		
 	</main>
+	<section class="section">
+		<h1 class="section__title title__big title__big--black">Greatest hits</h1>
+		<div class="section__img">
+			<img class="img" src="assets/images/rockyou.png" alt="Pochette de l'album queen.">
+		</div>
+		<div class="section__slider">
+			<button class="section__button section__button--prev"><span class="button--span">Previous</span></button>
+				<div>
+					<p class="section__text">Bohemian Rhapsody</p>
+					<p class="section__text section__text--date">Release in 1975</p>
+				</div>
+			<button class="section__button"><span class="button--span">Next</span></button>
+		</div>
+	</section>
 </body>
 </html>
