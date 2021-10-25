@@ -105,3 +105,45 @@ let change = document.querySelector(".header");
 buttonBurger.addEventListener("click", () =>{
     change.classList.toggle("change");
 })
+
+// <---------- SLIDER ---------->
+
+const btnPrev = document.querySelector(".slider__btn--prev");
+const btnNext = document.querySelector(".slider__btn--next");
+
+function next(){
+    let elShow = document.querySelector(".slider__el--show");
+    let elNext = elShow.nextElementSibling;
+
+    elShow.classList.remove("slider__el--show");
+
+    if(elNext){
+        elNext.classList.add("slider__el--show");
+    } else{
+        let elFirst = elShow.parentNode.firstElementChild;
+        elFirst.classList.add("slider__el--show");
+    }
+}
+
+function prev(){
+    let elShow = document.querySelector(".slider__el--show");
+    let elPrev = elShow.previousElementSibling;
+
+    elShow.classList.remove("slider__el--show");
+
+    if(elPrev){
+        elPrev.classList.add("slider__el--show");
+    } else{
+        let elFirst = elShow.parentNode.lastElementChild;
+        elFirst.classList.add("slider__el--show");
+    }
+}
+
+btnNext.addEventListener("click", next);
+btnPrev.addEventListener("click", prev);
+
+const slider = document.querySelector(".slider");
+const hammerSlider = new Hammer(slider);
+
+hammerSlider.on("swipeleft", prev);
+hammerSlider.on("swiperight", next);

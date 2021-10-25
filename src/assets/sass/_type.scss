@@ -4,6 +4,8 @@ $fontSize2: $fontSize1*$fontRapport;
 $fontSize3: $fontSize2*$fontRapport;
 $fontSize4: $fontSize3*$fontRapport;
 $fontSize5: $fontSize4*$fontRapport;
+$fontColor: #fabf19;
+$fontwhite : #FFFFFF;
 
 @font-face {
     font-family: 'Josefin Sans', cursive;
@@ -17,26 +19,28 @@ html{
     font-family: 'Josefin Sans', cursive;
     font-size: $fontSize1;
 }
-.section__text{
-  text-transform: uppercase;
-  text-align: center;
-}
-.section__text--date{
-  font-size: 14px;
-}
 .title__big{
-  color: white;
+  color: $fontwhite;
   font-family: 'Federo';
   font-size: $fontSize3;
 }
 .title__big--black{
   text-transform: uppercase;
-  color: black;
+  color: $fontColor;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: $fontColor 2px solid;
+  margin: 50px 25px 25px 25px;
+}
+.title__medium{
+  text-align: center;
+}
+.slider__text{
+  text-align: center;
 }
 .main__text{
-  font-family: 'Federo', cursive;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-family: 'Josefin Sans', cursive;
+  font-weight: 600;
   font-size: $fontSize2;
-  color: white;
+  color: $fontwhite;
 }

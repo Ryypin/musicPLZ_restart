@@ -61,7 +61,7 @@
 	</header>
 	<main class="main">
 		<div class="main__logo">
-			<img id="logo" class="logo" src="assets/images/header_logoWHITE.svg" alt="Logo du groupe queen.">
+			<img id="logo" class="logo" src="assets/images/header_logoYELLOW.svg" alt="Logo du groupe queen.">
 			<p class="main__text">Touch screen three times</p>
 			<p class="main__text main__text--show hidden">Show must go on</p>
 		</div>
@@ -73,16 +73,41 @@
 	</main>
 	<section class="section">
 		<h1 class="section__title title__big title__big--black">Greatest hits</h1>
-		<div class="section__img">
-			<img class="img" src="assets/images/rockyou.png" alt="Pochette de l'album queen.">
-		</div>
-		<div class="section__slider">
-			<button class="section__button section__button--prev"><span class="button--span">Previous</span></button>
-				<div>
-					<p class="section__text">Bohemian Rhapsody</p>
-					<p class="section__text section__text--date">Release in 1975</p>
-				</div>
-			<button class="section__button"><span class="button--span">Next</span></button>
+		<div class="slider slider--anim">
+			<ul class="slider__control">
+				<li class="slider__btn slider__btn--prev"><span class="hidden">Previous</span></li>
+				<li class="slider__btn slider__btn--next"><span class="hidden">Next</span></li>
+			</ul>
+			<ul class="slider__list">
+				<li class="slider__el slider__el--show">
+					<img class="slider__img" src="assets/images/bohemianV2.jpg">
+					<div class="slider__content">
+						<h2 class="title__medium">Bohemian Raphsody</h2>
+						<p class="slider__text">Release in 1974</p>
+					</div>
+				</li>
+				<li class="slider__el">
+					<img class="slider__img" src="assets/images/dont-stop me now.jpg">
+					<div class="slider__content">
+						<h2 class="title__medium">We will rock you</h2>
+						<p class="slider__text">Release in 1974</p>
+					</div>
+				</li>
+				<li class="slider__el">
+					<img class="slider__img" src="assets/images/rockyou.png">
+					<div class="slider__content">
+						<h2 class="title__medium">Another bite to dust</h2>
+						<p class="slider__text">Release in 1974</p>
+					</div>
+				</li>
+				<li class="slider__el">
+					<img class="slider__img" src="assets/images/The_Show_Must_Go_On.jpg">
+					<div class="slider__content">
+						<h2 class="title__medium">Show must go on</h2>
+						<p class="slider__text">Release in 1974</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 </body>
